@@ -19,12 +19,36 @@
 
 /* --------------------------------------------------------------MAIN-------------------------------------------------------------- */
 
-/* *{
-    border: 1px solid red;
-} */
+body{
+    margin: 0;
+}
 
 header{
     background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.left-hero {
+    font-family: 'RobotoBold';
+    font-size: 24px;
+    color: #f9faf8;
+    margin-left: 5%;
+}
+  
+.right-hero {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.right-hero a{
+    text-decoration: none;
+    font-family: 'RobotoThin';
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-right: 20px;
 }
 
 footer{
@@ -32,7 +56,6 @@ footer{
     flex-direction: column;
     gap: 20px;
     background-color: #1f2937;
-    margin-top: 50px;
     padding-bottom: 20px;
     font-family: 'RobotoThin';
     font-size: 18px;
@@ -49,53 +72,22 @@ footer a{
     color: #e5e7eb;
 }
 
-.hero{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid white;
-}
-
-.left-hero {
-    font-family: 'RobotoBold';
-    font-size: 24px;
-    color: #f9faf8;
-    margin-left: 100px;
-}
-  
-.right-hero {
-    display: flex;
-    align-items: center;
-    margin-right: 100px;
-}
-
-.right-hero a{
-    text-decoration: none;
-    font-family: 'RobotoThin';
-    font-size: 18px;
-    color: #e5e7eb;
-    margin-right: 20px;
-}
-
 /* --------------------------------------------------------------INDEX-------------------------------------------------------------- */
 
 .box-2{
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-    margin-left: 200px;
-    margin-right: 100px;
-    padding-bottom: 80px;
-}
-
-.inside-box-2{
-    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1f2937;
 }
 
 .deep-box-2{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 5% 0;
 }
 
 .welcome-box-2{
@@ -128,109 +120,85 @@ footer a{
     width: 150px;
 }
 
-.img-container{
-    margin-left: 120px;
-    margin-top: 40px;
-}
-
-.img{
-    width: 750px;
-    height: 400px;
+.box-2 img{
+    max-width: 100%;
+    max-height: 400px;
     border: 1px solid white;
     border-radius: 5px;
 }
 
-.text-box{
-    display: flex;
-    align-items: center;
-    margin: 30px 0;
-}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
 
-.text-info{
+.header-2{
     font-family: 'RobotoBold';
     font-size: 36px;
     text-align: center;
     color: #1f2937;
-    width: 50%;
     margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
 }
 
 .four-boxes{
     display: flex;
-    margin-bottom: 50px;
-}
-
-.four-boxes img{
-    width: 350px;
-    height: 220px;
-    border-radius: 5px;
-}
-
-.four-boxes figure{
-    margin: 0;
-}
-
-.four-boxes figcaption{
+    justify-content: center;
+    text-align: center;
     font-family: 'RobotoThin';
     font-size: 18px;
     color: #1f2937;
-    width: 95%;
 }
 
-.box-container{
-    display: flex;
-    align-items: center;
-    text-align: center;
+.four-boxes img{
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
-.quote-box{
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.quote{
     display: flex;
     background-color: #e5e7eb;
     align-items: center;
-}
-
-.quote-text{
+    justify-content: center;
     font-family: 'RobotoLightItalic';
     font-size: 36px;
     text-align: center;
     color: #1f2937;
-    width: 50%;
     margin: 0 auto;
-    padding: 40px 0;
+    margin-top: 5%;
+    padding: 5% 0;
 }
+
+.quote p{
+    width: 50%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
 
 .subscribe-box{
     display: flex;
     background-color: #3882f6;
+    color: #e5e7eb;
     justify-content: center;
     border-radius: 5px;
-    margin: 50px auto;
-    width: 80%;
+    margin: 5% auto;
+    gap: 15%;
+    width: 70%;
+    padding: 2% 0;
 }
 
-.subscribe-box-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    gap: 200px;
-}
-
-.subscribe-box-text{
-    padding: 20px 0;
-}
-
-.subscribe-box-bold{
+.subscribe-box h3{
     font-family: 'RobotoBold';
     font-size: 24px;
+    margin: 0;
 }
 
-.subscribe-box-normal{
+.subscribe-box p{
     font-family: 'RobotoThin';
     font-size: 18px;
-}
-
-.subscribe-box-bold p, .subscribe-box-normal p {
     margin: 0;
 }
 
@@ -241,8 +209,7 @@ footer a{
     border-color: white;
     font-family: 'RobotoBold';
     font-size: 18px;
-    padding: 10px 20px;
-    width: 150px;
+    width: 10%;
 }
 
 /* --------------------------------------------------------------COURSES-------------------------------------------------------------- */
@@ -266,11 +233,11 @@ footer a{
 }
 
 .courses-no-background-box p, .courses-background-box p{
-    padding-top: 65px;
+    padding-top: 5%;
 }
 
 .courses-no-background-box img, .courses-background-box img{
-    width: 475px;
+    width: 100%;
     height: 325px;
     border-radius: 5px;
     border: 1px solid white;
@@ -293,7 +260,7 @@ footer a{
 }
 
 .instructors-box img{
-    width: 400px;
+    width: 100%;
     height: 250px;
     border-radius: 5px;
     border: 1px solid white;
@@ -393,3 +360,115 @@ footer a{
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
+/* --------------------------------------------------------------STYLES-------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .left-hero{
+        font-size: 18px;
+    }
+
+    .right-hero a{
+        font-size: 12px;
+    }
+
+    .box-2 {
+      flex-direction: column;
+    }
+  
+    .deep-box-2 {
+      margin: 40px;
+      padding: 40px;
+    }
+  
+    .title-box-2 {
+      font-size: 36px;
+    }
+  
+    .img {
+      margin-top: 40px;
+      max-height: 300px;
+      max-width: 99%;
+    }
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  @media (max-width: 768px) {
+    .header-2 {
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .four-boxes {
+      flex-wrap: wrap;
+    }
+    
+    .four-boxes figure {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .four-boxes img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  @media only screen and (max-width: 768px) {
+    .quote {
+      flex-direction: column;
+      font-size: 24px;
+      padding: 10% 0;
+    }
+    
+    .quote p {
+      width: 80%;
+    }
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  @media only screen and (max-width: 768px) {
+
+    .subscribe-box {
+      flex-direction: column;
+      gap: 5%;
+      width: 70%;
+      padding: 5%;
+      text-align: center;
+    }
+    
+    .subscribe-box h3 {
+      font-size: 18px;
+    }
+    
+    .subscribe-button {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  @media only screen and (max-width: 768px) {
+    .courses-no-background-box, .courses-background-box{
+        font-size: 20px;
+    }
+    
+    .courses-no-background-box, .courses-background-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .courses-no-background-box img, .courses-background-box img{
+        height: 200px;
+    }
+    
+    .courses-no-background-box p, .courses-background-box p{
+        padding: 5%;
+        width: 80%;
+    }
+  }
